@@ -1,0 +1,185 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+ }
+ 
+ ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+ }
+.headerBox {
+    height: 45px;
+    width: 100vw;
+    padding: 0 30px;
+    background-color: #eee;
+    position: fixed;
+    z-index: 100;
+    box-shadow: 1px 1px 15px rgba(161, 182, 253, 0.825);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+ 
+ .displayFlex {
+    display: flex;
+    align-items: center;
+ }
+ .displayFlexS{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ }
+ 
+ .dashboard-container {
+    display: flex;
+    width: 100vw;
+    position: relative;
+    top: 45px;
+    z-index: 1;
+ }
+ 
+ .dashboard-nav {
+    width: 200px;
+    background-color: black;
+    color: white;
+    height: 100vh;
+    transition: all 0.5s ease-in-out; 
+ }
+ 
+ .dashboard-nav a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 15px 10px;
+ }
+ .dashboard-nav .menu_item{
+    margin-left: 10px!important;
+ }
+ 
+ .dashboard-nav a:hover {
+    background-color: white;
+    color: black;
+    transition: all 0.5s ease-in-out;
+ }
+ 
+ .dashboard-content {
+    flex: 1;
+    padding: 20px;
+ }
+ 
+ .tab-content {
+    display: none;
+ }
+ 
+ .tab-content h2 {
+    color: #333;
+ }
+ .displayNone {
+    display: none!important;
+ }
+ .navclose {
+    width: 50px;
+ } 
+
+.AddBtn{
+    display: inline-block;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 15px;
+    color: white;
+    border-radius: 5px;
+    text-transform: capitalize;
+    background-color: black;
+}
+/* modal style */
+.modal {
+   display: none;
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.5);
+   justify-content: center;
+   align-items: center;
+}
+
+.modal-content {
+
+   margin: 0 auto;
+}
+.modal-content form{
+   width: 500px;
+   border-radius: 5px;
+   border: 2px solid black;
+   padding: 20px;
+   text-align: center;
+   background-color: white;
+}
+.modal-content form .inputBox{
+   width: 100%;
+    border-radius: 5px;
+    border: 2px solid black;
+    padding: 12px 14px;
+    font-size: 18px;
+    margin: 10px 0;
+}
+.btn{
+   margin-top: 10px;
+   display: inline-block;
+   padding: 10px 30px;
+   cursor: pointer;
+   font-size: 18px;
+   color: white;
+   border-radius: 5px;
+   text-transform: capitalize;
+   margin-left: 10px;
+}
+.btnClose{
+   background-color:#e74c3c;
+}
+.btnSave{
+   background-color:#3498db;
+}
+.flexEnd{
+   display: flex;
+   justify-content: flex-end;
+}
+/* Style pour cacher le scroll lorsque la modal est ouverte */
+body.modal-open {
+   overflow: hidden;
+}
+table {
+   width: 100%;
+   border-collapse: collapse;
+   margin-top: 20px;
+}
+
+thead {
+   background-color: #4CAF50;
+   color: white;
+}
+
+th, td {
+   padding: 12px;
+   text-align: left;
+   border-bottom: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+   background-color: #f2f2f2;
+}
+
+.empty-table{
+   padding: 10px;
+    background-color: #f44336;
+    color: #fff;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
